@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_perfil"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/header"
+                android:text="@string/perfil_header"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:paddingTop="24dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+            />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:id="@+id/iv_profile"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/profile"
+                    android:contentDescription="@string/perfil_description_foto"
+
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/retangulo_infos"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/perfil_tv_nome"
+                            android:textColor="@color/azul_btn"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+
+                        />
+
+                        <TextView
+                            android:id="@+id/tv_nome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/perfil_hint_nome"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+
+                        />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/perfil_tv_RA"
+                            android:textColor="@color/azul_btn"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+
+                        />
+
+                        <TextView
+
+                            android:id="@+id/tv_ra"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/perfil_hint_ra"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+
+                        />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/perfil_tv_curso"
+                            android:textColor="@color/azul_btn"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+
+                        />
+
+                        <TextView
+
+                            android:id="@+id/tv_curso"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/perfil_hint_curso"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+
+                        />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/perfil_tv_semestre"
+                            android:textColor="@color/azul_btn"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+
+                        />
+
+                        <TextView
+
+                            android:id="@+id/tv_semestre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/perfil_hint_semestre"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+
+                        />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/perfil_tv_email"
+                            android:textColor="@color/azul_btn"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+
+                        />
+
+                        <TextView
+
+                            android:id="@+id/tv_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/perfil_hint_email"
+                            android:paddingBottom="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+
+                        />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom">
+
+                        <TextView
+
+                            android:id="@+id/tv_editar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/fundo_editarinfos"
+                            android:gravity="center"
+                            android:text="@string/perfil_btn_editar"
+                            android:textAlignment="center"
+                            android:textColor="@color/azul_btn"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+
+                        />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="38dp">
+
+                        <TextView
+                            
+                            android:id="@+id/tv_btn_sair"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/fundo_btn"
+                            android:gravity="center"
+                            android:text="@string/perfil_btn_sair"
+                            android:textAlignment="center"
+                            android:textColor="@color/vermelho"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+
+                        />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
